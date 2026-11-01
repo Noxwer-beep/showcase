@@ -35,6 +35,11 @@ what it argues and what it demonstrates:
 - **[aurora](https://github.com/Noxwer-beep/aurora)** → https://noxwer-beep.github.io/aurora/
 - **[ledger](https://github.com/Noxwer-beep/ledger)** → https://noxwer-beep.github.io/ledger/
 
+The other five stay in this repo, and this repo stays public. That is a decision, not an
+oversight: GitHub Pages will not serve a site from a private repo on a free plan, and for
+a hand-written static page the published source is the page anyway. Nothing here is a
+secret; the private repo is the one with addresses in it.
+
 ## Structure
 
     showcase/
