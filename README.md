@@ -1,8 +1,8 @@
 # Eight homepages — design gallery
 
-Eight different answers to the same brief: a homepage for Maximilian Jatzkowski —
-IT student, homelab, security, web. Each is a complete, hand-written static page.
-No framework, no build step, no bundler.
+Same content, eight layouts. I wanted to know how much the layout actually decides, so
+I built the same page eight times — each a complete, hand-written static page with no
+framework, no build step and no bundler.
 
 **Live:** https://noxwer-beep.github.io/showcase/
 
