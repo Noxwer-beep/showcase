@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MJ — Build · Break · Document · Repeat</title>
+<meta name="description" content="Kinetic type concept: scroll velocity, horizontal rail, oversized poster type.">
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <span class="mark">MJ</span>
+  <span class="top-mid">Portfolio — 2026</span>
+  <a class="top-link" href="../">Concepts</a>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-type" aria-label="Build, break, document, repeat">
+      <span class="word" data-split>BUILD</span>
+      <span class="word word--outline" data-split>BREAK</span>
+      <span class="word word--accent" data-split>DOCUMENT</span>
+      <span class="word" data-split>REPEAT</span>
+    </div>
+
+    <div class="hero-meta">
+      <p class="meta-label">Maximilian Jatzkowski</p>
+      <p>IT student · homelab · security</p>
+      <p>Germany, CET</p>
+      <p class="meta-now">Now: Metasploitable 2</p>
+    </div>
+
+    <p class="cue" aria-hidden="true">Scroll <span>↓</span></p>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="track">
+      <span>Homelab</span><b>/</b><span>Security</span><b>/</b><span>AI agents</span><b>/</b><span>Web</span><b>/</b>
+      <span>Homelab</span><b>/</b><span>Security</span><b>/</b><span>AI agents</span><b>/</b><span>Web</span><b>/</b>
+    </div>
+  </div>
+
+  <section class="rail-wrap" id="railWrap">
+    <div class="rail-sticky">
+      <div class="rail-head">
+        <p class="meta-label">01 — Selected work</p>
+        <p class="rail-count"><span id="railIndex">01</span> / 04</p>
+      </div>
+
+      <div class="rail" id="rail">
+        <article class="card">
+          <p class="card-num">01</p>
+          <h2>Homelab</h2>
+          <p>Server, managed switches, firewall rules, a segmented network. Everything
+            documented, because an unexplained system is an unfixable one.</p>
+          <p class="card-tags">Linux · Switching · Firewalls</p>
+        </article>
+
+        <article class="card card--dark">
+          <p class="card-num">02</p>
+          <h2>Hack The Box</h2>
+          <p>Machines and challenges across web, network, and privilege escalation.
+            Enumeration first; the exploit is usually the boring part.</p>
+          <p class="card-tags">Recon · Priv-esc · Notes</p>
+        </article>
+
+        <article class="card card--accent">
+          <p class="card-num">03</p>
+          <h2>Agents</h2>
+          <p>Tool-calling agents for research and automation — built to be useful
+            first and impressive second.</p>
+          <p class="card-tags">LLMs · Python · Tooling</p>
+        </article>
+
+        <article class="card">
+          <p class="card-num">04</p>
+          <h2>This site</h2>
+          <p>Hand-written HTML, CSS and JavaScript. No framework, no build step,
+            no dependencies doing the design for me.</p>
+          <p class="card-tags">HTML · CSS · Vanilla JS</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="statement">
+    <p class="meta-label">02 — Method</p>
+    <p class="statement-text" data-words>
+      I learn by building the thing, breaking it, and writing down what happened.
+    </p>
+  </section>
+
+  <section class="cols">
+    <div>
+      <p class="meta-label">Who</p>
+      <p>Twenty-five, studying IT in Germany. I keep a homelab that is slightly more
+        complicated than it needs to be, and I prefer the unglamorous half of
+        security: the enumeration, the notes, the second look.</p>
+    </div>
+    <div>
+      <p class="meta-label">How</p>
+      <p>Short conversations over long specs. Documentation as part of the build,
+        not an afterthought. English for work, German for thinking.</p>
+    </div>
+    <div>
+      <p class="meta-label">Now</p>
+      <p>Metasploitable 2, agent experiments, and this site — which is also the
+        thing you are looking at.</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <p class="meta-label">03 — Contact</p>
+    <a class="big-mail" href="mailto:jatzkowski.maximilian@gmail.com">
+      <span>jatzkowski</span>
+      <span class="big-mail-accent">.maximilian</span>
+      <span>@gmail.com</span>
+    </a>
+    <div class="contact-foot">
+      <a href="https://www.hackthebox.com/" target="_blank" rel="noopener">Hack The Box</a>
+      <a href="../">All concepts</a>
+      <p>Concept 03 — Kinetic</p>
+    </div>
+  </section>
+</main>
+
+<script src="main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maximilian Jatzkowski — build things, break things</title>
+<meta name="description" content="Neo-brutalist concept: chunky type, hard shadows, draggable stickers.">
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="dot" aria-hidden="true"></div>
+<div class="cursor-ring" id="ring" aria-hidden="true"></div>
+
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" id="ticker">
+    <span>OPEN TO WORK</span><b>✱</b><span>HOMELAB</span><b>✱</b><span>SECURITY</span><b>✱</b><span>AI AGENTS</span><b>✱</b>
+    <span>OPEN TO WORK</span><b>✱</b><span>HOMELAB</span><b>✱</b><span>SECURITY</span><b>✱</b><span>AI AGENTS</span><b>✱</b>
+  </div>
+</div>
+
+<header class="bar">
+  <span class="logo">M/J</span>
+  <span class="bar-note">Portfolio 2026 ✱ Concept 05</span>
+  <a href="../" class="bar-link">All concepts ↖</a>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>
+      <span class="line1">Maximilian</span>
+      <span class="line2">Jatzkowski<i>.</i></span>
+    </h1>
+
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="lede">I build systems, break them on purpose, and write down what
+          happened. IT student in Germany. Homelab, security, interfaces.</p>
+        <div class="actions">
+          <a class="btn btn--acid" href="mailto:jatzkowski.maximilian@gmail.com" data-magnetic>
+            Say hello <span>→</span>
+          </a>
+          <a class="btn" href="https://www.hackthebox.com/" target="_blank" rel="noopener">
+            Hack The Box <span>↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="sticker" id="sticker" role="button" tabindex="0"
+           aria-label="Draggable sticker: IT student, Germany">
+        <span>IT STUDENT</span>
+        <span>GERMANY</span>
+        <small>drag me</small>
+      </div>
+    </div>
+  </section>
+
+  <section class="cards">
+    <article class="card">
+      <p class="k">01 / Infrastructure</p>
+      <h2>Homelab</h2>
+      <p>Server, managed switches, firewall rules, a segmented network. Documented,
+        because an unexplained system is an unfixable one.</p>
+      <span class="stamp">2026</span>
+    </article>
+
+    <article class="card card--ink">
+      <p class="k">02 / Security</p>
+      <h2>Hack The Box</h2>
+      <p>Machines and challenges, plus local labs like Metasploitable 2. The exploit
+        is usually the boring part.</p>
+      <span class="stamp">ongoing</span>
+    </article>
+
+    <article class="card card--acid">
+      <p class="k">03 / Agents + web</p>
+      <h2>Small tools</h2>
+      <p>Tool-calling agents and hand-written interfaces. Useful first, impressive
+        second.</p>
+      <span class="stamp">now</span>
+    </article>
+  </section>
+
+  <section class="contact">
+    <p class="k">04 / Contact</p>
+    <a class="big" href="mailto:jatzkowski.maximilian@gmail.com">jatzkowski<br>@gmail.com</a>
+    <div class="foot">
+      <span>Maximilian Jatzkowski · Germany</span>
+      <span>Concept 05 — Brutalist</span>
+      <a href="../">← all concepts</a>
+    </div>
+  </section>
+</main>
+
+<script src="main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Five homepages — design gallery</title>
+<meta name="description" content="Five portfolio homepage concepts: editorial, terminal, kinetic type, spatial canvas, neo-brutalist.">
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="hub.css">
+</head>
+<body>
+
+<div class="preview" id="preview" aria-hidden="true">
+  <img id="previewImg" src="" alt="">
+</div>
+
+<header class="top">
+  <p class="mono">Maximilian Jatzkowski</p>
+  <p class="mono">Design gallery — 2026</p>
+  <p class="mono"><span class="dot"></span>five concepts</p>
+</header>
+
+<main>
+  <section class="intro">
+    <p class="eyebrow"><span class="tick"></span>Reference sheet</p>
+    <h1>Five ways to say<br><em>the same thing.</em></h1>
+    <p class="lede">
+      The same person, the same work, five different arguments about how a homepage
+      should behave. Each one is a single hand-written page — open any of them,
+      resize the window, move the cursor.
+    </p>
+  </section>
+
+  <section class="list" aria-label="Design concepts">
+    <a class="row" href="01-paper/" data-img="thumbs/01.jpg">
+      <span class="num">01</span>
+      <span class="name">Paper</span>
+      <span class="desc">Editorial print layout. Serif display, rules, a running
+        index, reading progress.</span>
+      <span class="meta">Fraunces · reading progress</span>
+      <span class="arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <a class="row" href="02-terminal/" data-img="thumbs/02.jpg">
+      <span class="num">02</span>
+      <span class="name">Terminal</span>
+      <span class="desc">The whole site is a shell. Type <b>help</b>, <b>ls</b>,
+        <b>cat lab</b>; it answers.</span>
+      <span class="meta">JetBrains Mono · command parser</span>
+      <span class="arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <a class="row" href="03-kinetic/" data-img="thumbs/03.jpg">
+      <span class="num">03</span>
+      <span class="name">Kinetic</span>
+      <span class="desc">Swiss poster type with a marquee that reacts to scroll
+        velocity and a horizontal rail.</span>
+      <span class="meta">Archivo Black · scroll velocity</span>
+      <span class="arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <a class="row" href="04-spatial/" data-img="thumbs/04.jpg">
+      <span class="num">04</span>
+      <span class="name">Spatial</span>
+      <span class="desc">A generative flow field under quiet type. Move the cursor
+        to push it around; click to scatter it.</span>
+      <span class="meta">Syne · canvas particle field</span>
+      <span class="arrow" aria-hidden="true">↗</span>
+    </a>
+
+    <a class="row" href="05-brutal/" data-img="thumbs/05.jpg">
+      <span class="num">05</span>
+      <span class="name">Brutal</span>
+      <span class="desc">Acid yellow, hard shadows, a sticker you can drag, buttons
+        that lean toward the cursor.</span>
+      <span class="meta">Bricolage · magnetic buttons</span>
+      <span class="arrow" aria-hidden="true">↗</span>
+    </a>
+  </section>
+
+  <section class="note">
+    <p class="mono">Notes</p>
+    <div class="note-body">
+      <p>Every page is static: one HTML file, one stylesheet, one script, no build
+        step and no dependencies beyond a Google Fonts request.</p>
+      <p>All five respect <span class="mono-inline">prefers-reduced-motion</span>,
+        work without a mouse, and keep their text in the HTML rather than in a canvas.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p class="mono">© 2026 Maximilian Jatzkowski</p>
+  <p class="mono"><a href="mailto:jatzkowski.maximilian@gmail.com">jatzkowski.maximilian@gmail.com</a></p>
+  <p class="mono">Hand-written · no framework</p>
+</footer>
+
+<script src="hub.js" defer></script>
+</body>
+</html>

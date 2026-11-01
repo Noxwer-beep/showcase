@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" data-theme="crt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>max@homelab — portfolio</title>
+<meta name="description" content="Terminal portfolio concept: an interactive shell as a homepage.">
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanlines" aria-hidden="true"></div>
+
+<main class="terminal">
+  <header class="bar">
+    <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="title">max@homelab: ~/portfolio</span>
+    <span class="clock" id="clock">--:--</span>
+  </header>
+
+  <div class="screen" id="screen">
+    <div class="out" id="out" role="log" aria-live="polite" aria-label="Terminal output"></div>
+
+    <form class="promptline" id="form" autocomplete="off">
+      <label class="ps1" for="cmd">max@homelab<span class="ps1-path">:~/portfolio</span>$</label>
+      <input id="cmd" class="cmd" type="text" autocomplete="off" autocapitalize="off"
+             autocorrect="off" spellcheck="false" aria-label="Terminal command">
+    </form>
+
+    <p class="hint" id="hint">try <b>help</b> · <b>ls</b> · <b>whoami</b> · <b>theme paper</b></p>
+
+    <noscript>
+      <div class="fallback">
+        <p>JavaScript is off, so the shell is asleep — but the content still works:</p>
+        <ul>
+          <li><a href="mailto:jatzkowski.maximilian@gmail.com">jatzkowski.maximilian@gmail.com</a></li>
+          <li><a href="https://www.hackthebox.com/">Hack The Box</a></li>
+          <li><a href="../">All design concepts</a></li>
+        </ul>
+      </div>
+    </noscript>
+  </div>
+
+  <footer class="bar bar--bottom">
+    <span>concept 02 — terminal</span>
+    <a href="../">../all-concepts</a>
+  </footer>
+</main>
+
+<script src="main.js" defer></script>
+</body>
+</html>
