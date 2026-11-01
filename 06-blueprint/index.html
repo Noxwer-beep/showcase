@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blueprint — a portfolio as a technical drawing</title>
+<meta name="description" content="Concept 06: the portfolio drawn as a technical schematic — construction grid, dimension lines, leader annotations, a title block.">
+<meta name="theme-color" content="#08182b">
+<link rel="stylesheet" href="../css/fonts.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="guides" aria-hidden="true">
+  <span class="axis axis-x"></span>
+  <span class="axis axis-y"></span>
+  <span class="readout mono" id="readout">x 000 · y 000</span>
+</div>
+
+<header class="sheet-head">
+  <div class="wrap">
+    <div class="titleblock">
+      <div class="tb-cell tb-main">
+        <p class="mono k">Drawing</p>
+        <h1>Maximilian Jatzkowski<span class="rev">rev. 06</span></h1>
+        <p class="mono sub">Portfolio — sheet 1 of 1 · IT student · Germany</p>
+      </div>
+      <dl class="tb-meta">
+        <div><dt class="mono">Scale</dt><dd class="mono">1 : 1</dd></div>
+        <div><dt class="mono">Units</dt><dd class="mono">mm</dd></div>
+        <div><dt class="mono">Drawn</dt><dd class="mono" id="drawn">2026</dd></div>
+        <div><dt class="mono">Sheet</dt><dd class="mono">A1</dd></div>
+      </dl>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero sheet" id="s1">
+    <div class="wrap">
+      <p class="mono tag">01 — Elevation</p>
+
+      <div class="dim-h" aria-hidden="true">
+        <span class="dim-line"></span>
+        <span class="dim-label mono">1480</span>
+      </div>
+
+      <h2 class="display">
+        Systems<br>
+        <span class="em">drawn</span> before<br>
+        they are built.
+      </h2>
+
+      <div class="callout-row">
+        <div class="leader" aria-hidden="true"></div>
+        <p class="note mono">
+          <b>Note 01</b> — Homelab runs on Proxmox with VLAN segmentation behind
+          OPNsense. Every interface is documented before it is cabled.
+        </p>
+      </div>
+
+      <p class="lede">
+        I'm Maximilian, an IT student in Germany. I build networks that stay up,
+        break them on purpose, and write down what happened. The drawing is the
+        point: if it is not on the sheet, it is not real.
+      </p>
+    </div>
+  </section>
+
+  <section class="sheet" id="s2">
+    <div class="wrap">
+      <p class="mono tag">02 — Parts list</p>
+      <h3 class="h3">What is on the bench</h3>
+
+      <table class="parts">
+        <thead>
+          <tr>
+            <th class="mono">Item</th><th class="mono">Description</th>
+            <th class="mono">Qty</th><th class="mono">Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="mono">01</td><td>Bare-metal hypervisor, segmented network</td><td class="mono">1</td><td class="mono">D-002</td></tr>
+          <tr><td class="mono">02</td><td>Managed switch, 802.1Q trunking</td><td class="mono">1</td><td class="mono">D-002</td></tr>
+          <tr><td class="mono">03</td><td>Firewall, per-VLAN rules</td><td class="mono">1</td><td class="mono">D-002</td></tr>
+          <tr><td class="mono">04</td><td>Authorized scanner, 129 tests</td><td class="mono">1</td><td class="mono">D-006</td></tr>
+          <tr><td class="mono">05</td><td>Documentation vault, 40 entries</td><td class="mono">1</td><td class="mono">D-004</td></tr>
+        </tbody>
+      </table>
+
+      <div class="dim-v note-right" aria-hidden="true"><span class="dim-line"></span><span class="dim-label mono">412</span></div>
+    </div>
+  </section>
+
+  <section class="sheet" id="s3">
+    <div class="wrap">
+      <p class="mono tag">03 — Detail views</p>
+      <h3 class="h3">Three sections at scale</h3>
+
+      <div class="details">
+        <article class="detail">
+          <span class="mono detail-num">A</span>
+          <h4>Infrastructure</h4>
+          <p>Proxmox VE, managed switching, firewall rules and a segmented
+            network — documented as it is built, not after.</p>
+          <p class="mono meta">Linux · Networking · Virtualisation</p>
+        </article>
+        <article class="detail">
+          <span class="mono detail-num">B</span>
+          <h4>Security</h4>
+          <p>Hack The Box, Metasploitable 2, and my own tooling for authorized
+            scanning. Practice measured in notes taken, not boxes rooted.</p>
+          <p class="mono meta">Enumeration · Priv-esc · Reporting</p>
+        </article>
+        <article class="detail">
+          <span class="mono detail-num">C</span>
+          <h4>Web</h4>
+          <p>Hand-written interfaces with no framework and no build step.
+            This page is one of eight design studies.</p>
+          <p class="mono meta">HTML · CSS · JavaScript</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sheet contact" id="s4">
+    <div class="wrap">
+      <p class="mono tag">04 — Issue for construction</p>
+      <h3 class="h3">Get in touch</h3>
+      <a class="mail" href="mailto:jatzkowski.maximilian@gmail.com">jatzkowski.maximilian@gmail.com</a>
+      <p class="mono foot-note">
+        Approved by: <span class="sig">MJ</span> · Date: 2026 ·
+        <a href="../">back to the gallery</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="sheet-foot">
+  <div class="wrap foot-grid">
+    <span class="mono">Maximilian Jatzkowski</span>
+    <span class="mono">Blueprint — concept 06</span>
+    <span class="mono">No framework · no tracking</span>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
