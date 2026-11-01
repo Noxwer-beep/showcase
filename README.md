@@ -73,7 +73,7 @@ trade-offs.
 
 ## Why eight
 
-The same content, argued eight ways, is the cheapest way to answer "which layout does
-this content want?". The answers disagree, which is the point: the terminal says *the
-interface is the personality*, the ledger says *the work is data*, the blueprint says
-*show the construction*.
+Same content, eight layouts, because that is the cheapest way to find out which one the
+content wants. They disagree, which is the useful part: the terminal says the interface
+is the personality, the ledger says the work is data, the blueprint says show the
+construction.
