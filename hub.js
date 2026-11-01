@@ -30,7 +30,9 @@
 
   document.querySelectorAll(".row").forEach(function (row) {
     row.addEventListener("pointerenter", function (e) {
-      img.src = row.getAttribute("data-img");
+      var src = row.getAttribute("data-img");
+      if (!src) return;
+      img.src = src;
       preview.classList.add("on");
       tx = e.clientX;
       ty = e.clientY;
